@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px; 
+      margin: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .box {
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+
+    h2 {
+      font-size: 26px; 
+      margin-bottom: 20px;
+      color: #262626;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h2 img {
+      width: 24px;
+      margin-right: 6px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 6px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: #fafafa;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #3897f0;
+      color: white;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2f80ed;
+    }
+
+    .divider {
+      margin: 20px 0;
+      color: #999;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 40%;
+      background-color: #dbdbdd;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .divider::before {
+      left: 0;
+    }
+
+    .divider::after {
+      right: 0;
+    }
+
+    .facebook-login {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #385185;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .facebook-login img {
+      width: 20px;
+      margin-right: 8px;
+    }
+
+    .forgot {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #00376b;
+      text-decoration: none;
+    }
+
+    .signup-box {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .signup-box a {
+      color: #3897f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+        <span>Instagram</span>
+      </h2>
+
+      <form action="" method="post">
+        <input type="email" id="email" name="email" required placeholder="Phone number, username, or email">
+        <input type="password" id="password" name="password" required placeholder="Password">
+        <input type="submit" value="Log In">
+      </form>
+
+      <div class="divider">OR</div>
+
+      <div class="facebook-login">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="fb" />
+        <span>Log in with Facebook</span>
+      </div>
+
+      <a href="" class="forgot">Forgot password?</a>
+    </div>
+
+    <div class="signup-box">
+      <p>Don't have an account? <a href="">Sign up</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e){
+      e.preventDefault();
+      window.location.href = "troll.html?msg=+Nice+Try+Diddy+😂";
+    });
+
+    document.querySelector(".facebook-login").addEventListener("click", function(){
+      window.location.href = "troll.html?msg=+I+ain%27t+Mark+ZukerBerg+🤡";
+    });
+
+    document.querySelector(".forgot").addEventListener("click", function(e){
+      e.preventDefault();
+      window.location.href = "troll.html?msg=+Can%27t+even+remember+own+pass,+Weak+Memory+🧠";
+    });
+
+    document.querySelector(".signup-box a").addEventListener("click", function(e){
+      e.preventDefault();
+      window.location.href = "troll.html?msg=+Again!!+Nice+try+Diddy+😂";
+    });
+  </script>
+</body>
+</html>
